@@ -1,0 +1,37 @@
+/* PRECISA USAR # QUANDO FOR ID */
+
+body {
+    /* Define a fonte padrão para o corpo da página */
+    font-family: Arial, sans-serif;
+    /* Adiciona um pouco de espaçamento ao redor do conteúdo */
+    margin: 20px;
+    text-align: center;
+}
+#form-cadastro {
+    /* Define uma largura máxima para o formulário */
+    max-width: 360px;
+    /* Centraliza o formulário horizontalmente */
+    margin: 0 auto;
+    /* Adiciona um pouco de espaçamento interno */
+    padding: 15px;
+    /* Adiciona uma borda leve ao redor do formulário */
+    border: 3px solid  #ffffff;
+    /* Adiciona bordas arredondadas */
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+#form-cadastro input {
+    /* Adiciona espaçamento interno aos campos de entrada */
+    padding: 8px;
+    /* Define uma margem inferior para separar os campos */
+    margin-bottom: 10px;
+    /* Define a largura dos campos de entrada */
+    width: 95%;
+    /* Adiciona uma borda leve */
+    border: 3px solid #ccc;
+    /* Adiciona bordas arredondadas */
+    border-radius: 4px;
+
+}
