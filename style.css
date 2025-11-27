@@ -1,11 +1,21 @@
 /* PRECISA USAR # QUANDO FOR ID */
 
 body {
+  background-image: url(pexelcin.jpg);
+  background-size: cover;
+  background-position: center;
   /* Define a fonte padrão para o corpo da página */
   font-family: Arial, sans-serif;
   /* Adiciona um pouco de espaçamento ao redor do conteúdo */
-  margin: 20px;
+  /* margin: 20px; */
+  /* background-color: black; */
   text-align: center;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
 }
 #form-cadastro {
   /* Define uma largura máxima para o formulário */
@@ -18,17 +28,22 @@ body {
   border: 3px solid #ffffff;
   /* Adiciona bordas arredondadas */
   border-radius: 5px;
+  background-color: rgba(3, 3, 3, 0.642);
+  color: #fe2732;
   text-align: center;
 }
 #form-edicao {
   /* Define uma largura máxima para o formulário */
   max-width: 360px;
+  color: #E50914;
+  background-color:  rgba(3, 3, 3, 0.642);
   /* Centraliza o formulário horizontalmente */
   margin: 0 auto;
   /* Adiciona um pouco de espaçamento interno */
-  padding: 16px;
+  padding: 10px;
   /* Adiciona uma borda leve ao redor do formulário */
-  border: 3px solid #ffffff;
+  /* border: 3px solid #ffffff; */
+    border:3px solid #ffffff;
   /* Adiciona bordas arredondadas */
   border-radius: 5px;
   text-align: center;
@@ -58,4 +73,16 @@ body {
   border: 3px solid #ccc;
   /* Adiciona bordas arredondadas */
   border-radius: 4px;
+}
+#filmes-cad{
+  color:#E50914;
+}
+#edt-film{
+  color: #E50914;
+}
+#titulo-catalogo {
+  color: #E50914;
+}
+#titulo-adc {
+  color:#E50914;
 }

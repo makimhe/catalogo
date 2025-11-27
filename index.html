@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>catalogo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <h1>CATALOGO</h1>
-    <h2>Adicione novos filmes!</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>catalogo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <form id="form-cadastro" action="adicionar_filme" method="post">
-      <label for="titulo">Título do Filme:</label>
-      <input type="text" id="titulo" name="titulo" required /><br /><br />
+<body>
+  <h1 id="titulo-catalogo">CATALOGO</h1>
+  <main>
+    <div>
+      
+      <h2 id="titulo-adc">Adicione novos filmes!</h2>
 
-      <label for="genero">Gênero:</label>
-      <input type="text" id="genero" name="genero" required /><br /><br />
+      <form id="form-cadastro" action="adicionar_filme" method="post">
+        <label for="titulo">Título do Filme:</label>
+        <input type="text" id="titulo" name="titulo" required /><br /><br />
 
-      <label for="diretor">Diretor:</label>
-      <input type="text" id="diretor" name="diretor" required /><br /><br />
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" name="genero" required /><br /><br />
 
-      <label for="ano">Ano de Lançamento:</label>
-      <input type="number" id="ano" name="ano" required /><br /><br />
+        <label for="diretor">Diretor:</label>
+        <input type="text" id="diretor" name="diretor" required /><br /><br />
 
-      <input type="submit" value="Adicionar Filme" />
-    </form>
+        <label for="ano">Ano de Lançamento:</label>
+        <input type="number" id="ano" name="ano" required /><br /><br />
 
-    <button id="btn-deletar">deletar filme selecionado</button>
+        <input type="submit" value="Adicionar Filme" />
+      </form>
 
-    <hr />
-<h2>filmes cadastrados</h2>
-    <select id="filmes-select">
-      <option value="">carregando...</option>
-    </select>
-    
-    <hr />
+      <button id="btn-deletar">deletar filme selecionado</button>
+    </div>
+    <div>
+      <h2 id="edt-film">Editar Filme Selecionado</h2>
+      
+      <form id="form-edicao">
+        <label for="titulo-edit">Novo Título:</label>
+        <input type="text" id="titulo-edit" name="titulo-edit" required/><br /><br />
 
-    <h2>Editar Filme Selecionado</h2>
-    <form id="form-edicao">
-      <label for="titulo-edit">Novo Título:</label>
-      <input type="text" id="titulo-edit" name="titulo-edit" required />
+        <label for="genero-edit">Novo Gênero:</label>
+        <input type="text" id="genero-edit" name="genero-edit" required/><br /><br />
 
-      <label for="genero-edit">Novo Gênero:</label>
-      <input type="text" id="genero-edit" name="genero-edit" required />
+        <label for="diretor-edit">Novo Diretor:</label>
+        <input type="text" id="diretor-edit" name="diretor-edit" required/><br /><br />
 
-      <label for="diretor-edit">Novo Diretor:</label>
-      <input type="text" id="diretor-edit" name="diretor-edit" required />
+        <label for="ano-edit">Novo Ano de Lançamento:</label>
+        <input type="number" id="ano-edit" name="ano-edit" required/><br /><br />
 
-      <label for="ano-edit">Novo Ano de Lançamento:</label>
-      <input type="number" id="ano-edit" name="ano-edit" required />
+        <input type="submit" value="Atualizar Filme" />
+      </form>
 
-      <input type="submit" value="Atualizar Filme" />
-    </form>
+    </div>
+  </main>
 
-    <hr />
 
-    
+  <!-- <hr /> -->
+  <h2 id="filmes-cad">filmes cadastrados</h2>
+  <select id="filmes-select">
+    <option value="">carregando...</option>
+  </select>
 
-    <script src="script.js"></script>
-  </body>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
